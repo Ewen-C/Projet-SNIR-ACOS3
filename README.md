@@ -23,8 +23,10 @@ La méthode permettant d'envoyer des commandes à la carte est ScardTransmit().
 
 Pour identifier la carte, le contenu du fichier nommé FF 00 de la carte est lu. Il contient son numéro de série et son numéro de version.
 Les numéros de série uniques des deux cartes issus des fichiers FF 00 sont les suivants :
+
 - Carte 1 : 04 54 41 00 2E 02 29 42
 - Carte 2 : 34 E3 99 0B EF E5 09 E2
+
 Si les codes sont corrects, les données sont envoyées au serveur avec la fonction send() de winsock2.
 
 ## Interface Homme-Machine
